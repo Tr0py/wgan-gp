@@ -3,7 +3,7 @@ import numpy as np
 import os
 import urllib
 import gzip
-import cPickle as pickle
+import pickle as pickle
 
 def unpickle(file):
     fo = open(file, 'rb')

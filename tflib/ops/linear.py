@@ -126,7 +126,7 @@ def Linear(
                 weight = weight * (target_norms / norms)
 
         # if 'Discriminator' in name:
-        #     print "WARNING weight constraint on {}".format(name)
+        #     print("WARNING weight constraint on {}").format(name)
         #     weight = tf.nn.softsign(10.*weight)*.1
 
         if inputs.get_shape().ndims == 2:

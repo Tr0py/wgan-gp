@@ -64,7 +64,7 @@ def Conv1D(name, input_dim, output_dim, filter_size, inputs, he_init=True, mask_
             filters_stdev,
             (filter_size, input_dim, output_dim)
         )
-        # print "WARNING IGNORING GAIN"
+        # print("WARNING IGNORING GAIN")
         filter_values *= gain
 
         filters = lib.param(name+'.Filters', filter_values)
