@@ -177,14 +177,14 @@ preprocess = torchvision.transforms.Compose([
                                torchvision.transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5)),
                            ])
 
-for iteration in xrange(ITERS):
+for iteration in range(ITERS):
     start_time = time.time()
     ############################
     # (1) Update D network
     ###########################
     for p in netD.parameters():  # reset requires_grad
         p.requires_grad = True  # they are set to False below in netG update
-    for i in xrange(CRITIC_ITERS):
+    for i in range(CRITIC_ITERS):
         _data = gen.next()
         netD.zero_grad()
 
